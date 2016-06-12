@@ -1,0 +1,136 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Rectangle2D
+{
+	private:
+	double x;
+	double y;
+	double width;
+	double height;
+	
+	public:
+	
+	Rectangle2D()
+	{
+		x = 0;
+		y = 0;
+		width = 1;
+		height = 1;
+	}
+	
+	Rectangle2D(double setx, double sety, double setwidth, double setheight)
+	{
+		x = setx;
+		y = sety;
+		width = setwidth;
+		height = setheight;
+	}
+	
+	double setnewx(double pointx)
+	{
+		x = pointx;
+	}
+	
+	double setnewy(double pointy)
+	{
+		y = pointy;
+	}
+	
+	double getnewx()
+	{
+		return x;
+	}
+	
+	double getnewy()
+	{
+		return y;
+	}
+	
+	double setnewwidth(double newwidth)
+	{
+		width = newwidth;
+	}
+	
+	double setnewheight(double newheight)
+	{
+		height = newheight;
+	}
+	
+	
+	double getnewwidth()
+	{
+		return width;
+	}	
+	
+	double getnewheight()
+	{
+		return height;
+	}
+	
+	double area = width * height;
+	
+	double perimeter = width + width + height + height;
+	
+	const int getArea()
+	{
+		return area;
+	}
+	
+	const int getPerimeter()
+	{
+		return perimeter;
+	}
+	
+	const bool contains(double pointx, double pointy)
+	{
+		if (abs(pointx - x) <= (width / 2) && (abs(pointy - y) <= (height / 2))
+		{
+			return true;
+		}
+		
+		else 
+		{
+			return false;
+		}
+	}
+	
+	const bool contains(const Rectangle2D &r)
+	{
+		if(((abs(r.getnewx() - x)) + (abs((r.getnewwidth() / 2) - r.getnewx()))) <= width / 2 && ((abs(r.getnewy() - y)) + (abs((r.getnewheight() / 2) - r.getnewy()))) <= height / 2)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	const bool true(const Rectangle2D &r)
+	{
+		if((abs(r.getnewx() - x)) <= (width + r.getnewwidth()) && (abs(r.getnewy() - y)) <= (height + r.getnewheight()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+
+int main()
+{
+	Rectangle2D r1(2, 2, 5.5, 4.9)
+	Rectangle2D r2(4, 5, 10.5, 3.2)
+	Rectangle2D r3(3, 5, 2.3, 5.4)
+	
+	cout << "Rectangle r1's area is " << r1.getArea() << endl;
+	cout << "Rectangle r1's perimeter is " << r1.getPerimeter() << endl;
+	cout << r1.contains(3, 3) << endl;
+	cout << r1.contains(r2) << endl;
+	cout << r1.overlaps(r3) << endl;
+}
+	
