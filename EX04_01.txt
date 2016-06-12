@@ -1,0 +1,38 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+
+int main()
+{
+	int list[10];
+	int sum = 0;
+	double average = 0;
+	srand(time(NULL));
+	for(int i = 0, i < 10, i++)
+	{
+		list[i] = rand () % 100;
+	}
+	
+	for(int j = 0, j < 10, j++)
+	{
+		sum += list[j];
+	}	
+	
+	average = sum / 10;
+	
+	for (int z = 0, int counter = 0, z < 10, z++)
+	{
+		if (list[z] > average)
+		{
+			counter++
+		}
+	}
+	
+	cout << "The average value in the array is " << average << " and the some of values above the average is " << counter << endl;
+	
+	return 0;
+}
+		
+	
+	
