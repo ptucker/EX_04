@@ -123,9 +123,9 @@ class Rectangle2D
 
 int main()
 {
-	Rectangle2D r1(2, 2, 5.5, 4.9)
-	Rectangle2D r2(4, 5, 10.5, 3.2)
-	Rectangle2D r3(3, 5, 2.3, 5.4)
+	Rectangle2D r1(2, 2, 5.5, 4.9);
+	Rectangle2D r2(4, 5, 10.5, 3.2);
+	Rectangle2D r3(3, 5, 2.3, 5.4);
 	
 	cout << "Rectangle r1's area is " << r1.getArea() << endl;
 	cout << "Rectangle r1's perimeter is " << r1.getPerimeter() << endl;
