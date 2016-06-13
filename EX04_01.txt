@@ -25,7 +25,7 @@ int main()
 	{
 		if (list[z] > average)
 		{
-			counter++
+			counter++;
 		}
 	}
 	
