@@ -8,7 +8,7 @@ int* findlowest(const int* array, int size)
 	{
 		if(array[i] < lowestelement)
 		{
-			lowestelement = array[i]
+			lowestelement = array[i];
 		}
 	}
 	return lowestelement;
