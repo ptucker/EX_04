@@ -1,0 +1,83 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+Class Course
+{
+	private:
+	
+	string courseName;
+	string student;
+	int numberOfStudents;
+	int capacity;
+	
+	public:
+	
+	Course()
+	{
+		courseName = 'Computer Science';
+		student = 'George Whitworth'
+		numberOfStudents = 1;
+		capacity = 10;
+	}
+	
+	int* addStudent(const int* list, int size)
+	{
+		size++;
+		int* newarray = new int[size];
+	
+		for (int i = 0, count = 1; i < size; i++; count++)
+		{
+			newarray[i] = count;
+		}
+	
+		return newarray;
+	}
+
+	void dropStudent(const int* list, int size)
+	{
+		size--;
+		int* newarray = new int[size];
+	
+		for (int i = 0, count = 1; i < size; i++; count++)
+		{
+			newarray[i] = count;
+		}
+	}
+
+	void Clear()
+	{
+		size = 0;
+		int* newarray = new int[size];
+	}
+
+	void getArray(const int* newarray, int doublesize)
+	{
+		for(int i = 0, i < size, i++)
+		{
+			cout << newarray[i] << " ";
+		}
+	}
+	
+	string getCourseName()
+	{
+		return courseName;
+	}	
+	
+	string getStudent()
+	{
+		return student;
+	}
+	
+	const int getNumberOfStudents()
+	{
+		return numberOfStudents;
+	}
+}
+		
+int main()
+{
+		int numberOfStudents[] = {1, 2, 3, 4, 5, 6};
+		
+		return 0;
+}
