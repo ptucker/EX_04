@@ -21,7 +21,7 @@ Class Course
 		capacity = 10;
 	}
 	
-	int* addStudent(const int* list, int size)
+	int* addStudent(const int* numberOfStudents, int size)
 	{
 		size++;
 		int* newarray = new int[size];
@@ -34,7 +34,7 @@ Class Course
 		return newarray;
 	}
 
-	void dropStudent(const int* list, int size)
+	void dropStudent(const int* numberOfStudents, int size)
 	{
 		size--;
 		int* newarray = new int[size];
@@ -51,14 +51,6 @@ Class Course
 		int* newarray = new int[size];
 	}
 
-	void getArray(const int* newarray, int doublesize)
-	{
-		for(int i = 0, i < size, i++)
-		{
-			cout << newarray[i] << " ";
-		}
-	}
-	
 	string getCourseName()
 	{
 		return courseName;
