@@ -5,8 +5,8 @@ using namespace std;
 Class Course
 {
 	private:
-	
 	string courseName;
+	//PT -- Course should have an array of strings for students. Check out Listing 11.16. 
 	string student;
 	int numberOfStudents;
 	int capacity;
@@ -15,6 +15,7 @@ Class Course
 	
 	Course()
 	{
+	//PT -- Strings, so courseName = "Computer Science";
 		courseName = 'Computer Science';
 		student = 'George Whitworth'
 		numberOfStudents = 1;
